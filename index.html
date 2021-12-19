@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Template!</title>
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="row">
+            <div class="main-header">
+                <h1>Vacations</h1>
+            </div>
+
+        </div>
+        <div class="row">
+            <h2>Add Vaction Form</h2>
+            <form id="addVacationForm" class="row g-3">
+                <div class="col-auto">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Location" />
+                </div>
+
+                <div class="col-auto">
+                    <label for="image" class="form-label">Image</label>
+                    <input type="text" class="form-control" id="image" placeholder="image" />
+                </div>
+
+                <div class="col-auto">
+                    <button type="button" style="height: 100%" class="btn btn-primary mb-3" id="addButton">
+              Add Vacation
+            </button>
+                </div>
+
+                <div class="col-auto">
+                    <button type="button" style="height: 100%" class="btn btn-danger mb-3" id="removeAllButton">
+              remove all Vacation
+            </button>
+                </div>
+
+                <div class="col-auto">
+                    <button type="button" style="height: 100%" class="btn btn-info mb-3" id="removeSelectedVacetion">
+              remove Selected Vacation
+            </button>
+                </div>
+
+
+
+            </form>
+        </div>
+
+        <!--  list -->
+
+        <div id="vacationsContainer" class="row"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/getUI.js"></script>
+    <script src="./js/getStateObjects.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
